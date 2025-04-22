@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Iso&display=swap');
+
+
+:root {
+    --cor-primaria: #1E2A78;
+    --cor-secundaria: #8E44AD;
+    --cor-detalhes: #2ECC71;
+    --cor-base: #F2F2F2;
+    --cor-texto: #1C1C1C;
+    --cor-destaque: #ffe100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    width: 55vw;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--cor-base);
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 40px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 500;
+    /* font-family: "Rubik Iso", system-ui; */
+}
+
+.nav_item.active a {
+    border-bottom: 3px solid var(--cor-destaque);
+}
+
+.button-sortear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.btn-sorteio {
+    background-color: var(--cor-destaque);
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-base);
+    color: var(--cor-primaria);
+    font-weight: 600;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#card-batalhas {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.batalha-card {
+    margin-top: 24px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.startup {
+    flex: 1;
+}
+
+.startup h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.vs {
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: center;
+    color: #666;
+}
+
+.administrar-batalha {
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.administrar-batalha label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+    color: #444;
+}
+
+.administrar-batalha input[type="checkbox"] {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.mt-24px {
+    margin-top: 24px
+}

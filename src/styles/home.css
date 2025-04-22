@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Iso&display=swap');
+
+
+:root {
+    --cor-primaria: #1E2A78;
+    --cor-secundaria: #8E44AD;
+    --cor-detalhes: #2ECC71;
+    --cor-base: #F2F2F2;
+    --cor-texto: #1C1C1C;
+    --cor-destaque: #ffe100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#navbar {
+    width: 55vw;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--cor-base);
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 40px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 500;
+}
+
+.nav_item.active a {
+    border-bottom: 3px solid var(--cor-destaque);
+}
+
+
+#resumo-startup-rush {
+    background-color: var(--cor-base);
+    margin: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#card-regras {
+    display: flex;
+    background-color: var(--cor-destaque);
+    margin: 10px;
+    padding: 30px;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 30px;
+}
+
+#card-eventos {
+    display: flex;
+    background-color: var(--cor-destaque);
+    margin: 10px;
+    padding: 30px;
+    width: 45%;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+
+#container {
+    display: flex;
+    justify-content: space-between; 
+}
